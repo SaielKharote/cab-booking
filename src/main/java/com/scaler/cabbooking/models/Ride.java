@@ -45,7 +45,7 @@ public class Ride {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private double fare;
-    private Integer otp;
+    private int otp;
 
     @Embedded
     private PaymentDetails paymentDetails = new PaymentDetails();
@@ -181,11 +181,11 @@ public class Ride {
         this.fare = fare;
     }
 
-    public Integer getOtp() {
+    public int getOtp() {
         return otp;
     }
 
-    public void setOtp(Integer otp) {
+    public void setOtp(int otp) {
         this.otp = otp;
     }
 

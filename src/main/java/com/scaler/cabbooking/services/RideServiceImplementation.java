@@ -93,7 +93,7 @@ public class RideServiceImplementation implements RideService {
         driver.setCurrentRide(ride);
 
         Random random = new Random();
-        Integer otp = random.nextInt(1000, 10000);
+        int otp = random.nextInt(1000, 10000);
         ride.setOtp(otp);
 
         rideRepository.save(ride);

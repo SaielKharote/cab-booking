@@ -21,7 +21,7 @@ public class RideDTO {
     private LocalDateTime endTime;
     private double fare;
     //    private PaymentDetails paymentDetails;
-    private Integer otp;
+    private int otp;
 
     public RideDTO() {
     }
@@ -154,11 +154,11 @@ public class RideDTO {
 //        this.paymentDetails = paymentDetails;
 //    }
 
-    public Integer getOtp() {
+    public int getOtp() {
         return otp;
     }
 
-    public void setOtp(Integer otp) {
+    public void setOtp(int otp) {
         this.otp = otp;
     }
 }
