@@ -44,7 +44,8 @@ public class AppConfig {
 //                                "http://localhost:3001",
 //                                "https://bookcabs.vercel.app"));
                         cfg.setAllowedOrigins(Collections.singletonList("*")); // allowed all origins for testing frontend
-                        cfg.setAllowedMethods(Collections.singletonList("*"));
+//                        cfg.setAllowedMethods(Collections.singletonList("*")); // commented for frontend purpose
+                        cfg.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Add other HTTP methods your application supports
                         cfg.setAllowCredentials(true);
                         cfg.setAllowedHeaders(Collections.singletonList("*"));
                         cfg.setExposedHeaders(Arrays.asList("Authorization"));
