@@ -39,10 +39,11 @@ public class AppConfig {
                     @Override
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration cfg = new CorsConfiguration();
-                        cfg.setAllowedOrigins(Arrays.asList(
-                                "http://localhost:3000",
-                                "http://localhost:3001",
-                                "https://bookcabs.vercel.app"));
+//                        cfg.setAllowedOrigins(Arrays.asList(
+//                                "http://localhost:3000",
+//                                "http://localhost:3001",
+//                                "https://bookcabs.vercel.app"));
+                        cfg.setAllowedOrigins(Collections.singletonList("*")); // allowed all origins for testing frontend
                         cfg.setAllowedMethods(Collections.singletonList("*"));
                         cfg.setAllowCredentials(true);
                         cfg.setAllowedHeaders(Collections.singletonList("*"));
